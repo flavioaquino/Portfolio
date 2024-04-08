@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image:url('assets/image.gif');
     background-repeat: no-repeat;
@@ -8,28 +12,57 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-.container {
+.containerHeader {
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
     display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    margin: 0px 40px 10px 40px;
+}
+
+.containerBody {
+    padding: 30px;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     border-radius: 10px;
-    margin: 90px 40px 40px 40px;
+    margin: 0px 40px 0px 40px;
 }
 
-/* Light mode */
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: white;
-        color: black;
-    }
+.btn-line {
+    font-family: 'open_sansregular';
+    position: relative;
+    transform: translate(-50%, -50%);
+    color: #333333;
+    font-size:1.3em;
+    cursor: pointer;
+    border-bottom: 2px solid #333333;
+    display: inline;
 }
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: black;
-        color: white;
-    }
+.btn-line a { 
+    text-decoration:none; 
+    color: #333333;
+    transition:0.4s;
+}
+
+.btn-line a:hover { color:#fb7804; }
+
+.btn-line .line {
+  width:0%;
+  height:2px;
+  position: absolute;
+  background: #fb7804;
+  left:0;
+  display:block;
+  transition:width 0.5s ease;
+  z-index:1;
+}
+
+.btn-line:hover .line {
+  width: 100%;
 }
