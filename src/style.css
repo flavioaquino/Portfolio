@@ -10,6 +10,7 @@ body {
     background-position: center;
     color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
+    font-size: large;
 }
 
 header {
@@ -71,4 +72,20 @@ nav ul li:last-child {
     backdrop-filter: blur(5px);
     border-radius: 10px;
     margin: 40px 40px 0px 40px;
+}
+
+.profileImage {
+    width: 500px;
+    height: 500px;
+    border-radius: 5%;
+    display: block;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.7);
+    margin-left: 400px;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
