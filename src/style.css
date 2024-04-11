@@ -61,17 +61,17 @@ nav ul li:last-child {
 }
 
 .containerTitle {
-    padding-left: 30px;
+    padding-left: 80px;
 }
 
 .containerBody {
-    padding: 30px;
+    padding: 50px;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     border-radius: 10px;
-    margin: 40px 40px 0px 40px;
+    margin: 40px 140px 0px 140px;
 }
 
 .profileImage {
@@ -80,6 +80,7 @@ nav ul li:last-child {
     border-radius: 5%;
     display: block;
     border-style: solid;
+    border-width: 5px;
     border-color: rgba(0, 0, 0, 0.7);
     margin-left: 400px;
 }
